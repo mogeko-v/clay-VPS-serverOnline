@@ -1,0 +1,238 @@
+/* fuentes de google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+/* control general */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*variable color*/
+body {
+  background: #141414;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 20px 300px 80vh 20px 250px 20px 500px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "header-linea" "contacto" "banner" "precio-start" "precio" "precio-end" "operadora";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #0c0c0d;
+  color: #e2631a;
+}
+
+.header-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.header span {
+  color: #C7C4D6;
+  font-weight: 400;
+}
+
+.header-boton {
+  display: inline;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.header-linea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header-linea;
+  background: #e2631a;
+}
+
+.contacto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: contacto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0c0c0d;
+  text-transform: capitalize;
+}
+
+.contacto {
+  padding: 0px 10px;
+}
+
+.contacto-numero {
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  font-size: 1em;
+}
+.contacto-numero a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.contacto-numero__link {
+  color: #851a1a;
+}
+
+/*numero de contacto */
+.contacto-info {
+  color: white;
+}
+
+/* Boton de whatsapp */
+.box-whatsapp {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.boton-whatsapp {
+  width: 50%;
+  border-radius: 20px;
+  border: 3px solid green;
+}
+
+.boton-whatsapp {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.boton-whatsapp > * {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../img/bg-banner.jpg);
+  background-size: cover;
+  background-position-x: 15%;
+  background-repeat: no-repeat;
+}
+
+/* texto del banner */
+.banner-box {
+  /* modificando espacio */
+  height: 100px;
+  width: 75%;
+  /* display */
+  display: flex;
+  align-items: center;
+  background: #0c0c0d;
+  border-radius: 0 20px 20px 0;
+  color: #ffffff;
+}
+
+/* cambiando el texto */
+.banner-box__title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+.banner-box__span {
+  text-transform: lowercase;
+  font-size: 0.9em;
+}
+
+.banner-img {
+  width: 80%;
+}
+
+.precio {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: precio;
+  background: #0c0c0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.precio-texto {
+  text-align: center;
+}
+
+.precio-start {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: precio-start;
+  background: #e2631a;
+}
+
+.precio-end {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: precio-end;
+  background: #e2631a;
+}
+
+.precio-texto > * {
+  margin: 1px;
+}
+
+.precio-texto__costo {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.precio-texto__tiempo {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.operadora {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: operadora;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.operadora > * {
+  width: 50%;
+  background: white;
+  border-radius: 50px;
+  font-size: 1em;
+}
+.operadora > * a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.operadora-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.operadora img {
+  width: 80%;
+}
